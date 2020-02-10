@@ -3,12 +3,10 @@ using namespace std;
 
 int  main()
 {
-    int arr[10]={1,2,3,4,5,6,7};
-    int f,l,m;
-    f=arr[0];
-    l=arr[6];
-    m=f+(l-f)/2;
-    cout<<m;
+    string arr[]={"1","2","3","4","5","6","7"};
+    int len;
+    len=sizeof(arr)/sizeof(arr[0]);
+    cout<<len;
 
     return 0;
 
