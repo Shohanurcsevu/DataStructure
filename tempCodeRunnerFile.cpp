@@ -1,27 +1,22 @@
 
-    int bsearch(int v[], int lengthofArray, int search)
+    int i ,j,temp;
+
+    for(i=0;i<lenghtOfArray;i++)
     {
-        int left, right, mid;
-        left = 0;
-        right = lenghtOfArray - 1;
-        while (left <= right)
+
+        for(j=0;j<i-lenghtOfArray-1;j++)
         {
-
-            mid = (left + right) / 2;
-
-            if (values[mid] < search)
+            if(arr[j]>arr[j+1])
             {
-                left = mid + 1;
-            }
-            else if (values[mid] > search)
-            {
-                right = mid - 1;
-            }
-            else
-            {
-                cout << mid << endl;
+                temp = arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
             }
         }
 
-        return -1;
     }
+
+ for (int i=0;i<lenghtOfArray;i++)
+ {
+     cout<<arr[i]<<"\t";
+ }
