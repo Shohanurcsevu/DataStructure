@@ -12,7 +12,7 @@ void bubblysort(int arr[],int n)
         flag=0;//flag initiated
         for(j=0; j<n-i-1; j++)//second loop started
         {
-            if(arr[j]>arr[j+1])
+            if(arr[j]<arr[j+1])
             {
                 temp=arr[j];
                 arr[j]=arr[j+1];         //swap
