@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1583043270 source:f:\datastructure\uriproblem\main.cpp
+	<iostream>
+	<iomanip>
+
